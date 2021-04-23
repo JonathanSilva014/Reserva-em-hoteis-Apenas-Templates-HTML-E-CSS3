@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html,body{
+    height: 100%;
+    background:linear-gradient(to right,#AB82FF, #9F79EE, white);
+}
+
+/**  abre Parte de cima */
+.container{
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.clear{
+    clear: both;
+}
+
+/** fecha Parte de cima */
+
+header{
+    background:linear-gradient(to right,#AB82FF, #9F79EE, white);
+    padding: 5px 4% 15px 4%;
+}
+
+.logo-1{
+    float: left;
+    width: 100px;
+    height: 100px;
+    background-image: url(../imagens/casii.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    
+}
+
+.logo-2{
+    float: right;
+    padding-top: 20px;
+    font-family:serif;
+    color: #8B4726;
+    background-image: url(../imagens/55.png);
+    background-position: top;
+    background-size: 70% 70%;
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 680px) {
+    
+    header{
+        text-align: center;
+    }
+
+    .logo-1, .logo-2{
+        margin-top: 10px;
+        display: inline-block;
+        float: none;
+    }
+}
+
+/** fecha Parte de cima *********************************************************************/
+
+section.cover-form{
+    width: 100%;
+}
+
+.bg{
+    position: relative;
+    height: 550px;
+    background-position: center;
+    background-size:cover ;
+    background-image: url(../imagens/bg-form.jpg);
+}
+
+.form-container{ /* FORMULARIO COMPLETO*/
+    position: absolute;
+    right: 30px;
+    top: -2;
+    width: 390px;
+    height: 103%;
+    box-shadow: 1px 1px 1px 1px rebeccapurple;
+    background-color: white;
+}
+
+.form-container h2{ /*LETRA GRANDE DO FORMULARIO INICIO*/
+    font-weight: normal;
+    padding:20px 15px;
+    color: black;
+    font-size: 18px;
+    background-color:#AB82FF ;
+}
+
+.form-container form{ /*FORMULARIO DENTRO EM SI SÓ*/
+    margin-top: 8px;
+    padding: 15px;
+    
+}
+
+.form-container form p{ /*CADA PARAGRAFÓ DENTRO DO FORMULARIO*/
+    font-size: 20px;
+    color: #AB82FF;
+}
+
+.form-container form input[type=text]{
+    width: 100%;
+    border-radius: 10px solid #ccc;
+    height: 45px;
+    line-height: 45px;
+    padding-left: 10px;
+}
+
+.form-wraper{
+    margin-top: 30px;
+}
+
+.form-container form input[type=submit]{ /*BOTÃO DE ENVIAR*/
+    background-color: #9F79EE;
+    color: white;
+    width: 100%;
+    font-size: 25px;
+    height: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+/*********************************LOGO MAIS A BAIXO DO SITE*********************************/
+
+section.chamada{
+    z-index: 1;
+    width: 100%;
+    text-align: center;
+    
+
+}
+
+section.chamada p{
+    padding: 10px;
+    width: 90%;
+    max-width: 700px;
+    display: inline-block;
+    color: #8B4726;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+section.chamada h2{
+    width: 90%;
+    max-width: 700px;
+    display: inline-block;
+    color: #8B4726;
+    font-size: 30px;
+    font-weight: normal;
+
+}
+
+section.chamada div.container{
+    background:linear-gradient(to right,#AB82FF, #9F79EE, white);
+    padding: 30px 0;
+}
+
+@media screen and (max-width: 800px) {
+    .bg{
+        text-align: center;
+    }
+
+    .form-container{
+        position: static;
+        display: inline-block;
+    }
+}
+
+.flex-mosaico{
+    display: flex;
+}
+
+.item-1-mosaico{ /*IMAGEM*/
+    background-position: center;
+    background-size: cover;
+    width: 60%;
+    
+}
+
+.item-2-mosaico{ /*TEXTO*/
+    padding: 30px;
+    width: 40%;
+    text-align: center;
+    color: #8B4726;
+    background:linear-gradient(to right,#AB82FF, #9F79EE, white);
+}
